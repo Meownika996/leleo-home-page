@@ -141,7 +141,7 @@ const config = {
 		{ go: "✉️ 前往注冊", img: "https://youke2.picui.cn/s1/2025/12/23/694a1ae9d6cb2.png", title: "域名邮箱", subtitle: "你可以前往注冊一个域名邮箱", text: "透过橙子云建立一个个人Email，可正常收发邮件（注冊码请透过qq或邮件和我索取）。", url: "https://mail.kohikyy.me", show: false },
 		{ go: "🚫 暂不开放 🚫", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "暂无内容", subtitle: "未来将开放个人Blog", text: "预计上线时间：未知", url: "about:blank", show: false },
 		{ go: "🌱 测试使用", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "暂无内容", subtitle: "真的没有东西", text: "当然你也可以去看看：D", url: "https://youtu.be/dQw4w9WgXcQ", show: false },
-		{ go: "⛔ 错误 ⛔", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "发生错误，请重试。", subtitle: "请联系网站管理员", text: "点击联系网站管理员", url: "https://bilibili.com/video/BV1UT42167", show: false },
+		{ go: "⛔ 错误 ⛔", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "发生错误，请重试。", subtitle: "请联系网站管理员", text: "点击联系网站管理员", url: "https://www.bilibili.com/video/BV1UT42167xb/", show: false },
 		{ go: "✅ 赞助", img: "https://youke2.picui.cn/s1/2025/12/23/694a251f2a529.jpg", title: "赞助站长", subtitle: "透过爱发电赞助我", text: "感谢支持！", url: "https://afdian.com/a/Kohikyy", show: false },
 	],
 
