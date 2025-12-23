@@ -1,140 +1,151 @@
-{
-	"metaData": {
-		"title": "橙子云",
-		"description": "欢迎来到我的小屋",
-		"keywords": "YuChen,yuchen,个人主页,个人网站,kohikyy,Kohikyy,橙子云",
-		"icon": "https://youke2.picui.cn/s1/2025/12/23/694a0e77e2408.jpg"
+const config = {
+	//网页元数据
+	metaData: {
+		title: '橙子云',
+		description: '欢迎来到橙子的小屋.',
+		keywords: 'YuChen,yuchen,个人主页,个人网站,kohikyy,Kohikyy,橙子云',
+		icon: 'https://youke2.picui.cn/s1/2025/12/23/694a0e77e2408.jpg'   //网页图标，支持外链
 	},
-	"avatar": "https://youke2.picui.cn/s1/2025/12/23/694a0fbc69312.jpeg",
-	"welcometitle": "YuChen on TOP",
-	"color": {
-		"themecolor": "#BBFCE1",
-		"welcometitlecolor": "#7BFFC9",
-		"turntablecolor1": "#FFFF00", 
-		"turntablecolor2": "#00FFFF"
+
+	avatar: "https://youke2.picui.cn/s1/2025/12/23/694a0fbc69312.jpeg", // 头像
+	welcometitle: "YuChen on TOP", // 标题
+
+	// 颜色配置
+	color: {
+		themecolor: "#BBFCE1", // 主题颜色，推荐趋于亮白可带有轻微色调，例： #D1FFEC
+		welcometitlecolor: "#7BFFC9", // 标题颜色 例： #7BFFC9
+		turntablecolor1: "#FFFF00",  // 转盘渐变色一
+		turntablecolor2: "#00FFFF"   // 转盘渐变色二
 	},
-	"brightness": 85,
-	"blur": 7,
-	"tags": ["平淡是真", "人文社科", "人本主义", "善解人意"],
-	"background": {
-		"pc": {
-			"type": "pic",
+
+	brightness: 85, // 背景亮度 --%
+	blur: 5, // 毛玻璃模糊效果
+
+	// 我的标签
+	tags: ['平淡是真', '人文社科', '人本主义', '善解人意'],
+
+	// 默认背景壁纸
+	background: {
+		"pc": {   //pc端
+			"type": "pic",   //"pic":静态壁纸;"video":动态壁纸
 			"datainfo": {
-				"title": "random01",
+				"title": "pc01",
 				"preview": "https://t.mwm.moe/pc",
-				"url": "https://t.mwm.moe/pc"
-			}
+				"url": "https://t.mwm.moe/pc",     //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
+			},
 		},
-		"mobile": {
+		"mobile": {   //移动端
 			"type": "pic",
 			"datainfo": {
-				"title": "mobile01",
+				"title": "mb01",
 				"preview": "https://t.mwm.moe/mp",
-				"url": "https://t.mwm.moe/mp"
+				"url": "https://t.mwm.moe/mp"  //同理，随机移动端壁纸："url":"https://t.mwm.moe/mp"
 			}
 		}
+
 	},
-	"polarChart": {
-		"skills": ["心理学", "社会学", "逻辑学", "唯心主义", "人本主义"],
-		"skillPoints": [70, 90, 95, 80, 88]
+
+	//极坐标图数据
+	polarChart: {
+		skills: ['心理学', '社会学', '逻辑学', '人本主义', '唯心主义', 'Python', 'linux', 'Docker', 'MySQL', 'MongoDB', 'AWS'],
+		skillPoints: [70, 90, 95, 80, 88],
 	},
-	"socialPlatformIcons": [{
-		"icon": "mdi-gift",
-		"link": "https://afdian.com/a/Kohikyy"
-	}, {
-		"icon": "mdi-email",
-		"link": "mailto:admin@kohikyy.me"
-	}, {
-		"icon": "mdi-qqchat",
-		"link": "http://res.abeim.cn/api-qq?qq=2745929481"
-	}, {
-		"icon": "mdi-alpha-b-box-outline",
-		"link": "https://bilibili.com/space/3546781252061848"
-	}, {
-		"icon": "mdi-youtube",
-		"link": "https://youtube.com/@kohikyy"
-	}, {
-		"icon": "mdi-send",
-		"link": "https://t.me/brt0110"
-	}],
-	"typeWriterStrings": ["我将违背我的本能，忤逆我的天性，永远爱你。", "Fear arises from duality.", "我用拇指遮住了新月的影子，推进了干涸的眼睛深处。", "花自向阳开，人终向前走。"],
-	"musicPlayer": {
-		"server": "netease",
-		"type": "playlist",
-		"id": "2270920568"
+
+	//社交按钮
+	socialPlatformIcons: [
+		{ icon: "mdi-gift", link: "https://afdian.com/a/Kohikyy" },
+		{ icon: "mdi-email", link: "mailto:admin@kohikyy.me" },
+		{ icon: "mdi-qqchat", link: "http://res.abeim.cn/api-qq?qq=2745929481" },
+		{ icon: "mdi-alpha-b-box-outline", link: "https://bilibili.com/space/3546781252061848" },
+		{ icon: "mdi-youtube", link: "https://youtube.com/@kohikyy" },
+		{ icon: "mdi-send", link: "https://t.me/brt0110" }
+	],
+
+	//打字机
+	typeWriterStrings: [
+		"我将违背我的本能，忤逆我的天性，永远爱你。",
+		"Fear arises from duality.",
+		"我用拇指遮住了新月的影子，推进了干涸的眼睛深处。",
+		"花自向阳开，人终向前走。"
+	],
+
+	//音乐播放配置，采用MetingJS Api(https://github.com/metowolf/MetingJS)
+	musicPlayer: {
+		server: 'netease',  //服务提供商 --网易云音乐
+		type: 'playlist',   //歌单类型
+		id: '2270920568'  //歌单id ---> music.163.com/#/playlist?id=2028178887
 	},
-	"wallpaper": {
-		"pic": [{
-				"title": "海洋女孩",
-				"preview": "/img/wallpaper/static/海洋女孩/image-pre.webp",
-				"url": "/img/wallpaper/static/海洋女孩/image.png"
-			}, {
-				"title": "书房夜晚",
-				"preview": "/img/wallpaper/static/书房夜晚/image-pre.webp",
-				"url": "/img/wallpaper/static/书房夜晚/image.png"
-			}, {
-				"title": "安逸舒适",
-				"preview": "/img/wallpaper/static/安逸舒适/image-pre.webp",
-				"url": "/img/wallpaper/static/安逸舒适/image.png"
-			}
+
+	//壁纸数据 -----可以将壁纸文件上传到图床获取网络直链。若想调用api，请前往脚本自行修改逻辑
+	wallpaper: {
+		pic: [
+			{ "title": "海洋女孩", "preview": "/img/wallpaper/static/海洋女孩/image-pre.webp", "url": "/img/wallpaper/static/海洋女孩/image.png" },
+			{ "title": "书房夜晚", "preview": "/img/wallpaper/static/书房夜晚/image-pre.webp", "url": "/img/wallpaper/static/书房夜晚/image.png" },
+			{ "title": "安逸舒适", "preview": "/img/wallpaper/static/安逸舒适/image-pre.webp", "url": "/img/wallpaper/static/安逸舒适/image.png" },
+			{ "title": "jswcMaMj", "preview": "https://s21.ax1x.com/2025/07/23/pVGli59.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGli59.jpg" },
+			{ "title": "pgtTqoqq", "preview": "https://s21.ax1x.com/2025/07/23/pVGlmDO.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlmDO.jpg" },
+			{ "title": "cvKMKhue", "preview": "https://s21.ax1x.com/2025/07/23/pVGlNqS.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlNqS.jpg" },
+			{ "title": "XpxvQVoP", "preview": "https://s21.ax1x.com/2025/07/23/pVGlfIJ.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlfIJ.jpg" },
+			{ "title": "fVEEjEOA", "preview": "https://s21.ax1x.com/2025/07/23/pVGlEgx.md.webp", "url": "https://s21.ax1x.com/2025/07/23/pVGlEgx.webp" },
+			{ "title": "jgnIKMpd", "preview": "https://s21.ax1x.com/2025/07/23/pVGldaQ.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGldaQ.jpg" },
+			{ "title": "mgqyySeh", "preview": "https://s21.ax1x.com/2025/07/23/pVGl82t.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGl82t.jpg" },
+			{ "title": "dSXZfZp", "preview": "https://s21.ax1x.com/2025/07/23/pVGlaVg.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlaVg.jpg" },
 		],
-		"picMobile": [{
-				"title": "0001",
-				"preview": "/img/wallpaper/static-mobile/0001/image-pre.webp",
-				"url": "/img/wallpaper/static-mobile/0001/image.png"
-			}, {
-				"title": "0002",
-				"preview": "/img/wallpaper/static-mobile/0002/image-pre.webp",
-				"url": "/img/wallpaper/static-mobile/0002/image.png"
-			}, {
-				"title": "0003",
-				"preview": "/img/wallpaper/static-mobile/0003/image-pre.webp",
-				"url": "/img/wallpaper/static-mobile/0003/image.png"
-			}, {
-				"title": "0004",
-				"preview": "/img/wallpaper/static-mobile/0004/image-pre.webp",
-				"url": "/img/wallpaper/static-mobile/0004/image.png"
-			}
+		picMobile: [
+			{ "title": "0001", "preview": "/img/wallpaper/static-mobile/0001/image-pre.webp", "url": "/img/wallpaper/static-mobile/0001/image.png" },
+			{ "title": "0002", "preview": "/img/wallpaper/static-mobile/0002/image-pre.webp", "url": "/img/wallpaper/static-mobile/0002/image.png" },
+			{ "title": "0003", "preview": "/img/wallpaper/static-mobile/0003/image-pre.webp", "url": "/img/wallpaper/static-mobile/0003/image.png" },
+			{ "title": "0004", "preview": "/img/wallpaper/static-mobile/0004/image-pre.webp", "url": "/img/wallpaper/static-mobile/0004/image.png" },
+			{ "title": "DfNHPPcc", "preview": "https://s21.ax1x.com/2025/07/23/pVG1uQ0.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVG1uQ0.jpg" },
+			{ "title": "cZZwzhis", "preview": "https://s21.ax1x.com/2025/07/23/pVG1Vij.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVG1Vij.jpg" },
+			{ "title": "aANKZHPX", "preview": "https://s21.ax1x.com/2025/07/23/pVGlIR1.md.jpg", "url": "https://s21.ax1x.com/2025/07/23/pVGlIR1.jpg" },
 		],
-		"video": [{
-			"title": "尼尔：机械纪元 团队",
-			"preview": "/img/wallpaper/dynamic/尼尔：机械纪元 团队/Nier-Automata-Team-pre.webm",
-			"url": "/img/wallpaper/dynamic/尼尔：机械纪元 团队/Nier-Automata-Team.webm"
-		}, {
-			"title": "向往航天的女孩",
-			"preview": "/img/wallpaper/dynamic/向往航天的女孩/Toy-Aeroplane-pre.webm",
-			"url": "/img/wallpaper/dynamic/向往航天的女孩/Toy-Aeroplane.webm"
-		}],
-		"videoMobile": [{
-			"title": "幻觉镇-gaako_illust",
-			"preview": "/img/wallpaper/dynamic-mobile/幻觉镇-gaako_illust/Hallucination_town-pre.mp4",
-			"url": "/img/wallpaper/dynamic-mobile/幻觉镇-gaako_illust/Hallucination_town.mp4"
-		}, {
-			"title": "chuva",
-			"preview": "/img/wallpaper/dynamic-mobile/chuva/chuva-pre.mp4",
-			"url": "/img/wallpaper/dynamic-mobile/chuva/chuva.mp4"
-		}, {
-			"title": "Doodle-小猫女仆降临",
-			"preview": "/img/wallpaper/dynamic-mobile/Doodle-小猫女仆降临/d12-pre.mp4",
-			"url": "/img/wallpaper/dynamic-mobile/Doodle-小猫女仆降临/d12.mp4"
-		}]
+		video: [
+			{
+				"title": "尼尔：机械纪元 团队",
+				"preview": "/img/wallpaper/dynamic/尼尔：机械纪元 团队/Nier-Automata-Team-pre.webm",
+				"url": "/img/wallpaper/dynamic/尼尔：机械纪元 团队/Nier-Automata-Team.webm"
+			},
+			{
+				"title": "向往航天的女孩",
+				"preview": "/img/wallpaper/dynamic/向往航天的女孩/Toy-Aeroplane-pre.webm",
+				"url": "/img/wallpaper/dynamic/向往航天的女孩/Toy-Aeroplane.webm"
+			},
+			{
+				"title": "世界很温柔《龙族》上杉绘梨衣",
+				"preview": "https://www.leleo.top/img/wallpaper/dynamic/%E4%B8%96%E7%95%8C%E5%BE%88%E6%B8%A9%E6%9F%94%E3%80%8A%E9%BE%99%E6%97%8F%E3%80%8B%E4%B8%8A%E6%9D%89%E7%BB%98%E6%A2%A8%E8%A1%A3/A2EF5E85-pre.webm",
+				"url": "https://www.leleo.top/img/wallpaper/dynamic/%E4%B8%96%E7%95%8C%E5%BE%88%E6%B8%A9%E6%9F%94%E3%80%8A%E9%BE%99%E6%97%8F%E3%80%8B%E4%B8%8A%E6%9D%89%E7%BB%98%E6%A2%A8%E8%A1%A3/A2EF5E85.webm"
+			},
+		],
+		videoMobile: [
+			{
+				"title": "幻觉镇-gaako_illust",
+				"preview": "/img/wallpaper/dynamic-mobile/幻觉镇-gaako_illust/Hallucination_town-pre.mp4",
+				"url": "/img/wallpaper/dynamic-mobile/幻觉镇-gaako_illust/Hallucination_town.mp4"
+			},
+			{
+				"title": "chuva",
+				"preview": "/img/wallpaper/dynamic-mobile/chuva/chuva-pre.mp4",
+				"url": "/img/wallpaper/dynamic-mobile/chuva/chuva.mp4"
+			},
+			{
+				"title": "Doodle-小猫女仆降临",
+				"preview": "/img/wallpaper/dynamic-mobile/Doodle-小猫女仆降临/d12-pre.mp4",
+				"url": "/img/wallpaper/dynamic-mobile/Doodle-小猫女仆降临/d12.mp4"
+			},
+		],
 	},
-	"projectcards": [{
-		"go": "✉️ 前往注冊",
-		"img": "https://youke2.picui.cn/s1/2025/12/23/694a1ae9d6cb2.png",
-		"title": "域名邮箱",
-		"subtitle": "你可以前往注冊一个域名邮箱",
-		"text": "透过橙子云建立一个个人Email，可正常收发邮件。",
-		"url": "https://mail.kohikyy.me",
-		"show": false
-	}, {
-		"go": "🚫 不开放 🚫",
-		"img": "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg",
-		"title": "暂无内容",
-		"subtitle": "未来将新增个人Blog",
-		"text": "预计上线时间：未知",
-		"url": "about:blank",
-		"show": false
-	}],
-	"statement": ["Create By Kohikyy"]
+
+	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
+	projectcards: [
+		{ go: "✉️ 前往注冊", img: "https://youke2.picui.cn/s1/2025/12/23/694a1ae9d6cb2.png", title: "域名邮箱", subtitle: "你可以前往注冊一个域名邮箱", text: "透过橙子云建立一个个人Email，可正常收发邮件。", url: "https://mail.kohikyy.me", show: false },
+		{ go: "🚫 暂不开放 🚫", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "暂无内容", subtitle: "未来将开放个人Blog", text: "预计上线时间：未知", url: "about:blank", show: false },
+		{ go: "🌱 测试使用", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "暂无内容", subtitle: "真的没有东西", text: "当然你也可以去看看：D", url: "https://youtu.be/dQw4w9WgXcQ", show: false },
+		{ go: "⛔ 错误 ⛔", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "发生错误，请重试。", subtitle: "请联系网站管理员", text: "点击联系网站管理员", url: "https://bilibili.com/video/BV1UT42167", show: false },
+		{ go: "✅ 赞助", img: "https://youke2.picui.cn/s1/2025/12/23/694a251f2a529.jpg", title: "赞助站长", subtitle: "透过爱发电赞助我", text: "感谢支持！", url: "https://afdian.com/a/Kohikyy", show: false },
+	],
+
+	statement: ["Create By Kohikyy"],
 }
+
+export default config
