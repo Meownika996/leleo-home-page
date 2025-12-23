@@ -56,7 +56,7 @@ const config = {
 		{ icon: "mdi-gift", link: "https://afdian.com/a/Kohikyy" },
 		{ icon: "mdi-email", link: "mailto:admin@kohikyy.me" },
 		{ icon: "mdi-qqchat", link: "http://res.abeim.cn/api-qq?qq=2745929481" },
-		{ icon: "mdi-alpha-b-box-outline", link: "https://bilibili.com/space/3546781252061848" },
+		{ icon: "mdi-alpha-b-box-outline", link: "https://space.bilibili.com/3546781252061848/" },
 		{ icon: "mdi-youtube", link: "https://youtube.com/@kohikyy" },
 		{ icon: "mdi-send", link: "https://t.me/brt0110" }
 	],
@@ -138,7 +138,7 @@ const config = {
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 	projectcards: [
-		{ go: "✉️ 前往注冊", img: "https://youke2.picui.cn/s1/2025/12/23/694a1ae9d6cb2.png", title: "域名邮箱", subtitle: "你可以前往注冊一个域名邮箱", text: "透过橙子云建立一个个人Email，可正常收发邮件。", url: "https://mail.kohikyy.me", show: false },
+		{ go: "✉️ 前往注冊", img: "https://youke2.picui.cn/s1/2025/12/23/694a1ae9d6cb2.png", title: "域名邮箱", subtitle: "你可以前往注冊一个域名邮箱", text: "透过橙子云建立一个个人Email，可正常收发邮件（注冊码请透过qq或邮件和我索取）。", url: "https://mail.kohikyy.me", show: false },
 		{ go: "🚫 暂不开放 🚫", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "暂无内容", subtitle: "未来将开放个人Blog", text: "预计上线时间：未知", url: "about:blank", show: false },
 		{ go: "🌱 测试使用", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "暂无内容", subtitle: "真的没有东西", text: "当然你也可以去看看：D", url: "https://youtu.be/dQw4w9WgXcQ", show: false },
 		{ go: "⛔ 错误 ⛔", img: "https://youke2.picui.cn/s1/2025/12/23/694a1bc864869.jpg", title: "发生错误，请重试。", subtitle: "请联系网站管理员", text: "点击联系网站管理员", url: "https://bilibili.com/video/BV1UT42167", show: false },
